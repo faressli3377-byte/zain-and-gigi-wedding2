@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zayn & Gigi — A Royal Wedding Invitation. Join us at Rexoplaza on May 5, 2026." />
+  <title>Zayn & Gigi — May 5, 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══ DAMASK BACKGROUND OVERLAY ═══ -->
+  <div class="damask-overlay" aria-hidden="true"></div>
+
+  <!-- ═══ THEME SELECTION OVERLAY ═══ -->
+  <div id="theme-overlay" class="theme-overlay">
+    <div class="overlay-card">
+      <div class="overlay-seal" aria-hidden="true">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="1.2" />
+          <circle cx="40" cy="40" r="30" stroke="currentColor" stroke-width="0.6" />
+          <text x="40" y="36" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="16"
+            font-weight="600" fill="currentColor">Z</text>
+          <text x="40" y="42" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="8"
+            fill="currentColor">&amp;</text>
+          <text x="40" y="56" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="16"
+            font-weight="600" fill="currentColor">G</text>
+        </svg>
+      </div>
+      <p class="overlay-kicker">You Are Cordially Invited</p>
+      <h2>Choose Your Side</h2>
+      <p class="overlay-copy">Please continue as a guest of the Groom or the Bride.</p>
+      <div class="overlay-actions">
+        <button id="groomBtn" class="theme-btn" type="button">
+          <span class="btn-icon">♛</span>
+          <span class="btn-label">The Groom</span>
+          <span class="btn-name">Zayn</span>
+        </button>
+        <button id="brideBtn" class="theme-btn" type="button">
+          <span class="btn-icon">♕</span>
+          <span class="btn-label">The Bride</span>
+          <span class="btn-name">Gigi</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ STICKY HEADER ═══ -->
+  <header class="site-header">
+    <div class="container">
+      <p class="monogram">Z &amp; G</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#story">Our Story</a>
+        <a href="#countdown-section">Countdown</a>
+        <a href="#venue">Venue</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#digital-ticket">Ticket</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <main id="mainContent" class="main-content hidden-before-theme">
+
+    <!-- ── HERO ── -->
+    <section id="hero" class="section hero-section">
+      <div class="container center">
+        <p class="kicker">The Royal Wedding Invitation</p>
+        <h1 class="hero-title">
+          <span class="name-zayn">Zayn</span>
+          <span class="ampersand">&amp;</span>
+          <span class="name-gigi">Gigi</span>
+        </h1>
+        <p class="hero-date" id="heroWeddingDate">Tuesday · May 5, 2026 · 06:00 PM</p>
+      </div>
+      <div class="flourish-divider" aria-hidden="true">
+        <svg viewBox="0 0 400 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,15 Q50,0 100,15 T200,15 T300,15 T400,15" stroke="currentColor" fill="none" stroke-width="0.8"
+            opacity="0.5" />
+          <circle cx="200" cy="15" r="3" fill="currentColor" opacity="0.6" />
+          <circle cx="160" cy="15" r="1.5" fill="currentColor" opacity="0.4" />
+          <circle cx="240" cy="15" r="1.5" fill="currentColor" opacity="0.4" />
+          <path d="M170,15 Q185,5 200,15 Q215,25 230,15" stroke="currentColor" fill="none" stroke-width="0.6"
+            opacity="0.5" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── OUR STORY ── -->
+    <section id="story" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Story</h2>
+        <div class="imperial-flourish" aria-hidden="true">
+          <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="120" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <path d="M125,10 Q135,2 150,10 Q165,18 175,10" stroke="currentColor" fill="none" stroke-width="0.8"
+              opacity="0.6" />
+            <line x1="180" y1="10" x2="300" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <circle cx="150" cy="10" r="2" fill="currentColor" opacity="0.5" />
+          </svg>
+        </div>
+        <div class="story-grid">
+          <article class="person-card root-card" id="zaynCard">
+            <div class="person-frame root-circle">
+              <img class="person-photo root-img adult-img" id="zaynAdultImg" alt="Zayn adult photo" loading="lazy" />
+              <img class="person-photo root-img young-img" id="zaynChildImg" alt="Zayn childhood photo"
+                loading="lazy" />
+            </div>
+            <h3>Zayn</h3>
+            <p class="person-title">The Groom</p>
+          </article>
+          <article class="person-card root-card" id="gigiCard">
+            <div class="person-frame root-circle">
+              <img class="person-photo root-img adult-img" id="gigiAdultImg" alt="Gigi adult photo" loading="lazy" />
+              <img class="person-photo root-img young-img" id="gigiChildImg" alt="Gigi childhood photo"
+                loading="lazy" />
+            </div>
+            <h3>Gigi</h3>
+            <p class="person-title">The Bride</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── COUNTDOWN ── -->
+    <section id="countdown-section" class="section">
+      <div class="container center">
+        <h2 class="section-title">Counting Down</h2>
+        <div class="imperial-flourish" aria-hidden="true">
+          <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="120" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <path d="M125,10 Q135,2 150,10 Q165,18 175,10" stroke="currentColor" fill="none" stroke-width="0.8"
+              opacity="0.6" />
+            <line x1="180" y1="10" x2="300" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <circle cx="150" cy="10" r="2" fill="currentColor" opacity="0.5" />
+          </svg>
+        </div>
+        <div id="countdown" class="countdown">
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-days">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-mins">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-secs">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VENUE ── -->
+    <section id="venue" class="section">
+      <div class="container">
+        <h2 class="section-title">The Venue</h2>
+        <div class="imperial-flourish" aria-hidden="true">
+          <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="120" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <path d="M125,10 Q135,2 150,10 Q165,18 175,10" stroke="currentColor" fill="none" stroke-width="0.8"
+              opacity="0.6" />
+            <line x1="180" y1="10" x2="300" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <circle cx="150" cy="10" r="2" fill="currentColor" opacity="0.5" />
+          </svg>
+        </div>
+        <p class="venue-name-display">Rexoplaza</p>
+        <div class="venue-gallery">
+          <div class="venue-main">
+            <img id="venueMainImg" src="https://i.postimg.cc/xT594xBz/Whats-App-Image-2026-04-30-at-2-39-12-PMo.jpg"
+              alt="Rexoplaza main hall" loading="lazy" />
+          </div>
+          <div class="venue-grid">
+            <img src="https://i.postimg.cc/dt6JxHgZ/Whats-App-Image-2026-04-30-at-2-39-11-PMx.jpg"
+              alt="Rexoplaza detail 1" loading="lazy" />
+            <img src="https://i.postimg.cc/Dy67MjRP/Whats-App-Image-2026-04-30-at-2-39-11-PMn.jpg"
+              alt="Rexoplaza detail 2" loading="lazy" />
+            <img src="https://i.postimg.cc/FsphBWwf/Whats-App-Image-2026-04-30-at-2-39-11-PM.jpg"
+              alt="Rexoplaza detail 3" loading="lazy" />
+            <img src="https://i.postimg.cc/5NgfR7DX/Whats-App-Image-2026-04-30-at-2-39-11-PMs.jpg"
+              alt="Rexoplaza detail 4" loading="lazy" />
+          </div>
+        </div>
+        <p class="venue-address">Rexoplaza</p>
+        <a id="navigateBtn" class="plain-link" href="https://www.google.com/maps/search/Rexoplaza" target="_blank"
+          rel="noopener noreferrer">Open in Maps ↗</a>
+      </div>
+    </section>
+
+    <!-- ── RSVP ── -->
+    <section id="rsvp" class="section">
+      <div class="container">
+        <h2 class="section-title">RSVP</h2>
+        <div class="imperial-flourish" aria-hidden="true">
+          <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="120" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <path d="M125,10 Q135,2 150,10 Q165,18 175,10" stroke="currentColor" fill="none" stroke-width="0.8"
+              opacity="0.6" />
+            <line x1="180" y1="10" x2="300" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <circle cx="150" cy="10" r="2" fill="currentColor" opacity="0.5" />
+          </svg>
+        </div>
+        <form id="rsvpForm" class="rsvp-form" novalidate>
+          <label class="field-label" for="rsvpName">Your Full Name</label>
+          <input id="rsvpName" class="line-input" type="text" maxlength="80" required />
+
+          <label class="field-label" for="rsvpGuests">Number of Guests (1–6)</label>
+          <input id="rsvpGuests" class="line-input" type="number" min="1" max="6" value="1" required />
+
+          <p class="field-label">Attendance</p>
+          <div class="radio-row">
+            <label><input type="radio" name="attendance" value="joyfully_attending" checked /> Joyfully
+              Attending</label>
+            <label><input type="radio" name="attendance" value="regretfully_absent" /> Regretfully Absent</label>
+          </div>
+
+          <label class="field-label" for="rsvpNote">A Sweet Note (Optional)</label>
+          <textarea id="rsvpNote" class="line-input line-textarea" rows="3" maxlength="220"></textarea>
+
+          <button type="submit" id="rsvpSubmitBtn" class="classic-btn">Confirm Attendance</button>
+          <p id="rsvpSuccess" class="status-text" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── DIGITAL TICKET ── -->
+    <section id="digital-ticket" class="section">
+      <div class="container">
+        <h2 class="section-title">Your Royal Invitation</h2>
+        <div class="imperial-flourish" aria-hidden="true">
+          <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="120" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <path d="M125,10 Q135,2 150,10 Q165,18 175,10" stroke="currentColor" fill="none" stroke-width="0.8"
+              opacity="0.6" />
+            <line x1="180" y1="10" x2="300" y2="10" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            <circle cx="150" cy="10" r="2" fill="currentColor" opacity="0.5" />
+          </svg>
+        </div>
+
+        <div id="ticketCard" class="ticket-preview">
+          <div class="ticket-seal" aria-hidden="true">✦</div>
+          <p class="ticket-kicker">The Royal Invitation</p>
+          <h3 id="ticketCoupleNames">Zayn &amp; Gigi</h3>
+          <div class="ticket-details">
+            <p><span class="ticket-label">Guest Name</span> <span id="ticketGuestName">Your Name Here</span></p>
+            <p><span class="ticket-label">Side</span> <span id="ticketGuestSide">Select Groom or Bride</span></p>
+            <p><span class="ticket-label">Date &amp; Time</span> <span id="ticketEventDate">Tuesday · 5/5/2026 · 06:00
+                PM</span></p>
+            <p><span class="ticket-label">Venue</span> <span id="ticketLocationText">Rexoplaza</span></p>
+          </div>
+          <div class="ticket-seal ticket-seal-bottom" aria-hidden="true">✦</div>
+        </div>
+
+        <label class="field-label" for="ticketNameInput">Enter Your Name to Claim Your Invitation</label>
+        <input id="ticketNameInput" class="line-input" type="text" maxlength="80"
+          placeholder="Type your full name..." />
+        <button id="saveTicketBtn" class="classic-btn" type="button">Save Ticket to Gallery</button>
+        <p id="ticketStatus" class="status-text" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="container center">
+      <div class="footer-seal" aria-hidden="true">
+        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="26" stroke="currentColor" fill="none" stroke-width="0.8" />
+          <circle cx="30" cy="30" r="22" stroke="currentColor" fill="none" stroke-width="0.4" />
+          <text x="30" y="34" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="11"
+            font-weight="600" fill="currentColor">Z &amp; G</text>
+        </svg>
+      </div>
+      <h2 class="footer-names">Zayn &amp; Gigi</h2>
+      <p id="footerWeddingDate">May 5, 2026</p>
+      <p class="footer-blessing">With love, joy, and eternal blessings.</p>
+    </div>
+  </footer>
+
+  <audio id="weddingMusic"
+    src="https://res.cloudinary.com/durlokstj/video/upload/v1777830199/WhatsApp_Audio_2026-05-03_at_8.42.20_PM_elwjkb.m4a"
+    loop></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
